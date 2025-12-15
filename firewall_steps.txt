@@ -1,0 +1,5 @@
+1. Opened Windows Firewall using netsh via VS Code terminal.
+2. Listed existing firewall rules.
+3. Added inbound rule to block TCP port 23 (Telnet).
+4. Tested the rule using telnet command.
+5. Removed the test firewall rule to restore system.

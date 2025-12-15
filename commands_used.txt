@@ -1,0 +1,5 @@
+netsh advfirewall show allprofiles
+netsh advfirewall firewall show rule name=all
+netsh advfirewall firewall add rule name="Block Telnet Port 23" dir=in action=block protocol=TCP localport=23
+telnet localhost 23
+netsh advfirewall firewall delete rule name="Block Telnet Port 23"
